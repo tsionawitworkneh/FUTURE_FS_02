@@ -43,10 +43,6 @@ export default function Dashboard() {
         System Analytics
       </h1>
 
-      <p className="muted">
-        Real-time CRM statistics
-      </p>
-
       <div className="stats-grid">
 
         <div className="stat-card">
@@ -55,6 +51,7 @@ export default function Dashboard() {
           <h3>Total Leads</h3>
 
           <h1>{total}</h1>
+          <p className="label">All leads in the system</p>
         </div>
 
         <div className="stat-card">
@@ -63,6 +60,7 @@ export default function Dashboard() {
           <h3>Conversion</h3>
 
           <h1>{conversionRate}%</h1>
+          <p className="label">Percentage of converted</p>
         </div>
 
         <div className="stat-card">
@@ -71,6 +69,7 @@ export default function Dashboard() {
           <h3>New Leads</h3>
 
           <h1>{newLeads}</h1>
+          <p className="label">New leads in the system</p>
         </div>
 
         <div className="stat-card">
@@ -79,6 +78,7 @@ export default function Dashboard() {
           <h3>Contacted</h3>
 
           <h1>{contacted}</h1>
+          <p className="label">Contacted leads in the system</p>
         </div>
 
       </div>

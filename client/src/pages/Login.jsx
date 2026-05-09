@@ -13,10 +13,10 @@ import {
 export default function Login() {
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState(DEMO_EMAIL);
+  const [email, setEmail] = useState("");
 
   const [password, setPassword] =
-    useState(DEMO_PASSWORD);
+    useState("");
 
   const [error, setError] = useState("");
 
@@ -43,9 +43,6 @@ export default function Login() {
 
         <h1>Mini CRM Access</h1>
 
-        <p className="muted">
-          Enter your credentials
-        </p>
 
         <label>Email</label>
 
@@ -54,7 +51,8 @@ export default function Login() {
           value={email}
           onChange={(e) =>
             setEmail(e.target.value)
-          }
+        }
+        placeholder="Enter your email"
         />
 
         <label>Password</label>
@@ -65,6 +63,7 @@ export default function Login() {
           onChange={(e) =>
             setPassword(e.target.value)
           }
+          placeholder="Enter your password"
         />
 
         {error && (

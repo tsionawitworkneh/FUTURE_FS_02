@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import {
   FaEdit,
-  FaTrash,
+  FaRegTrashAlt,
   FaPlus,
 } from "react-icons/fa";
 
@@ -152,7 +152,7 @@ export default function Leads() {
                       deleteLead(lead)
                     }
                   >
-                    <FaTrash />
+                    <FaRegTrashAlt />
                   </button>
 
                 </td>
@@ -265,6 +265,7 @@ export default function Leads() {
             <div className="modal-actions">
 
               <button
+                className="secondary-btn"
                 onClick={() =>
                   setOpen(false)
                 }

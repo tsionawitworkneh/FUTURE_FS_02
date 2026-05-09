@@ -51,7 +51,7 @@ export default function Layout({ title, children }) {
         </nav>
 
         <button
-          className="signout"
+          className="logout-btn"
           onClick={() => {
             signOut();
             nav("/login");
@@ -79,9 +79,7 @@ export default function Layout({ title, children }) {
               </div>
             </div>
 
-            <div className="avatar">
-              <FaUserCircle />
-            </div>
+            
 
           </div>
 
