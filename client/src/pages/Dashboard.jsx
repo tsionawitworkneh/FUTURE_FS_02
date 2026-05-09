@@ -7,6 +7,16 @@ import {
   FaClock,
 } from "react-icons/fa";
 
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+  CartesianGrid,
+} from "recharts";
+
 import Layout from "../components/Layout";
 
 import { api } from "../api";
