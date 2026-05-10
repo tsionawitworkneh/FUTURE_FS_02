@@ -1,4 +1,4 @@
-const BASE = "http://localhost:5000/api/leads";
+const BASE = "https://future-fs-02-0tis.onrender.com/api/leads";
 
 export const api = {
   list: () =>
